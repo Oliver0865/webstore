@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+   "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+   
+   <definition name="baseLayout" template="/WEB-INF/layouts/template/baseLayout.jsp">
+      <put-attribute name="title" value="Sample Title" />
+      <put-attribute name="heading" value="" />
+      <put-attribute name="tagline" value="" />
+      <put-attribute name="navigation" value="/WEB-INF/layouts/template/navigation.jsp" />
+      <put-attribute name="content" value="" />
+      <put-attribute name="footer" value="/WEB-INF/layouts/template/footer.jsp" />
+   </definition>
+   
+   <definition name="welcome" extends="baseLayout">
+      <put-attribute name="title" value="Ollis Web Shop - Produkte" />
+      <put-attribute name="heading" value="Produkte" />
+      <put-attribute name="tagline" value="Alle verfügbaren Produkte in unserem Shop" />
+      <put-attribute name="content" value="/WEB-INF/views/products.jsp" />
+   </definition>
+   
+   <definition name="products" extends="baseLayout">
+      <put-attribute name="title" value="Ollis Web Shop - Produkte" />
+      <put-attribute name="heading" value="Produkte" />
+      <put-attribute name="tagline" value="Alle verfügbaren Produkte in unserem Shop" />
+      <put-attribute name="content" value="/WEB-INF/views/products.jsp" />
+   </definition>
+   
+   <definition name="product" extends="baseLayout">
+      <put-attribute name="title" value="Ollis Web Shop - Produkt" />
+      <put-attribute name="heading" value="Produkt" />
+      <put-attribute name="tagline" value="Details" />
+      <put-attribute name="content" value="/WEB-INF/views/product.jsp" />
+   </definition>
+   
+   <definition name="addProduct" extends="baseLayout">
+      <put-attribute name="title" value="Ollis Web Shop - Produkte" />
+      <put-attribute name="heading" value="Produkte" />
+      <put-attribute name="tagline" value="Produkt hinzufügen" />
+      <put-attribute name="content" value="/WEB-INF/views/addProduct.jsp" />
+   </definition>
+   
+   <definition name="login" extends="baseLayout">
+      <put-attribute name="title" value="Login" />
+      <put-attribute name="heading" value="Willkommen im Web Shop!" />
+      <put-attribute name="tagline" value="Das einzig echte Web Shop" />
+      <put-attribute name="content" value="/WEB-INF/views/login.jsp" />
+   </definition>
+   
+   <definition name="cart" extends="baseLayout">
+      <put-attribute name="title" value="Ollis Web Shop - Einkaufswagen" />
+      <put-attribute name="heading" value="Einkaufswagen" />
+      <put-attribute name="tagline" value="Alle Produkte in Ihrem Einkaufswagen" />
+      <put-attribute name="content" value="/WEB-INF/views/cart.jsp" />
+   </definition>
+      
+</tiles-definitions>
