@@ -14,7 +14,7 @@ Internationalisierung mit LocaleChangeInterceptor
 Spring Security user authentication (Der Benutzer root password admin123 hat die nötigen Rechte um Produkte anzusehen, hinzuzufügen und Bestellungen auszulösen
 Beim Hinzufügen eines  Produktes wird Spring Validation verwendet.
 Das Hinzufügen eines Produkts zum ShoppingCart erfolgt mit RESTful Services
-http://localhost:8080/webstore/rest/cart erzeugt ein neues Cart Object. Ebebso sind die weiteren CRUD Methoden über entsprechende REST Aufgrufe per Requet-Mapping.
+http://localhost:8080/webstore/rest/cart erzeugt ein neues Cart Object. Ebenso sind die weiteren CRUD Methoden über entsprechende REST Aufrufe per Request-Mapping umgesetzt.
 Der Checkout-Workflow ist mit Web Flow realisiert
 Die Darstellung der Seiten wurde per Apache Tiles vereinheitlicht.
 Die Daten werden über eine inMemory -DB verwaltet. Die Zugriffe erfolgen per JDBC.
